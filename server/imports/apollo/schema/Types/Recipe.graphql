@@ -1,0 +1,24 @@
+type Recipe {
+  _id: ID!
+  # The title of the Recipes
+  title: String
+  #Ingredients
+  ingredients: [RecipeIngredient]
+  #Implements
+  implements: [RecipeImplement]
+
+}
+
+type RecipeIngredient{
+  #Name of the ingredient
+  name: String
+  #Amount of the ingredient
+  amount: Int!
+}
+
+type RecipeImplement{
+  #Name of the ingredient
+  name: String
+  #Amount of the ingredient
+  amount: Int
+}

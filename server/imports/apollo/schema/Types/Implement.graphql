@@ -1,0 +1,5 @@
+type Implement {
+_id: ID!
+# The name of the Implements
+name: String!
+}

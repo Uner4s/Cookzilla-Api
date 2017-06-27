@@ -1,0 +1,6 @@
+type Ingredient {
+  _id: ID!
+  # The name of the ingredient
+  name: String!
+
+}

@@ -4,30 +4,30 @@ export default new SimpleSchema({
   title: {
     type: String
   },
-  ingredients: {
+  ingredient: {
     type: Array
   },
   // Declarando un arreglo de objetos
-  'ingredients.$': {
+  'ingredient.$': {
     type: Object
   },
-  'ingredients.$.ingredientId': {
+  'ingredient.$.ingredientId': {
     type: String
   },
-  'ingredients.$.amount': {
+  'ingredient.$.amount': {
     type: Number
   },
   // Declarando un arreglo de objetos
   implements: {
     type: Array
   },
-  'implements.$': {
+  'implement.$': {
     type: Object
   },
-  'implements.$.implementId': {
+  'implement.$.implementId': {
     type: String
   },
-  'implements.$.amount': {
+  'implement.$.amount': {
     type: Number
   },
   // Declarando un arreglo de objetos
@@ -44,16 +44,16 @@ export default new SimpleSchema({
     type: Number
   },
   // Declarando un arreglo de objetos
-  comments: {
+  comment: {
     type: Array
   },
-  'comments.$': {
+  'comment.$': {
     type: Object
   },
-  'comments.$.userId': {
+  'comment.$.userId': {
     type: String
   },
-  'comments.$.content': {
+  'comment.$.content': {
     type: String
   }
 })
