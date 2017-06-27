@@ -1,0 +1,31 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  	<meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    {{> styles }}
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="https://s3.amazonaws.com/orionsoft-assets/logo-full.png" alt="Logo" />
+    </div>
+    <div class="content">
+      <div class="content-inner">
+        {{> Template.contentBlock }}
+        {{# if isProduction }}
+          <img src="{{ trackPixelUrl }}" height="1" width="1" />
+        {{/ if }}
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        <a href="http://orionsoft.io">orionsoft.io</a>
+      </p>
+      {{> unsubscribe }}
+    </div>
+  </body>
+</html>
