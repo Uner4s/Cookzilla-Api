@@ -1,6 +1,8 @@
 import Ingredient from './Ingredient'
+import Implement from './Implement'
 
 export default {
-  ...Ingredient,
+  ...Implement,
+  ...Ingredient
 
 }

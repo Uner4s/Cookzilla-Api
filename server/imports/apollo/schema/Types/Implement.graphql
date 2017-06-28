@@ -1,5 +1,9 @@
 type Implement {
-_id: ID!
-# The name of the Implements
-name: String!
+  _id: ID!
+  # The name of the Implements
+  name: String!
+}
+
+input ImplementInput {
+  name: String!
 }

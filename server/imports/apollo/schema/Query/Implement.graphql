@@ -1,0 +1,5 @@
+type Query {
+  # Return all implements 
+  implements: [Implement]
+
+}

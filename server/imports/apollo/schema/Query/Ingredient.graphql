@@ -1,3 +1,4 @@
 type Query {
+  #return all Ingredients
   ingredients: [Ingredient]
 }
