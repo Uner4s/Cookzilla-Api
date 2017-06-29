@@ -1,4 +1,5 @@
 type Mutation {
   #Create ingredients in database
   createIngredient (name: String!): Ingredient
+  
 }

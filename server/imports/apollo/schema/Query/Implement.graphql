@@ -1,5 +1,5 @@
 type Query {
-  # Return all implements 
-  implements: [Implement]
+  # Return all implements
+  getImplements: [Implement]
 
 }

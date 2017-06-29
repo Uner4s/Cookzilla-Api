@@ -5,6 +5,6 @@ const Implements = new Meteor.Collection('implements')
 
 Implements.attachSchema(Schema)
 
-global.Implements = Implement
+global.Implements = Implements
 
 export default Implements
