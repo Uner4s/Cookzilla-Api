@@ -1,5 +1,6 @@
 type Mutation {
   #Create ingredients in database
   createIngredient (name: String!): Ingredient
-  
+  deleteIngredient (_id: ID!): Boolean
+  updateIngredient (_id: ID! name: String!): Ingredient
 }

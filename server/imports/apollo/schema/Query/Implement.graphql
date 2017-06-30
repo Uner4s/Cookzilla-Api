@@ -1,5 +1,5 @@
 type Query {
   # Return all implements
   getImplements: [Implement]
-
+  showImplement (_id: ID!): Implement
 }

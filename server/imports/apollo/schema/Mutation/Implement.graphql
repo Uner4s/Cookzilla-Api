@@ -1,4 +1,6 @@
 type Mutation{
   #createImplement
   createImplement (name: String!): Implement
+  deleteImplement (_id: ID!): Boolean
+  updateImplement (_id: ID! name: String!): Implement
 }

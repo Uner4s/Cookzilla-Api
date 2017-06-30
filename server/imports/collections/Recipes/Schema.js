@@ -7,6 +7,12 @@ export default new SimpleSchema({
   ingredient: {
     type: Array
   },
+  dificult: {
+    type: Number
+  },
+  time: {
+    type: Number
+  },
   // Declarando un arreglo de objetos
   'ingredient.$': {
     type: Object

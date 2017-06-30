@@ -1,5 +1,4 @@
-
+import Recipes from 'server/imports/collections/Recipes'
 export default function (root, params, {userId}) {
-  console.log('ejecutando')
-  return 'hola'
+  Recipes.find().fetch()
 }
