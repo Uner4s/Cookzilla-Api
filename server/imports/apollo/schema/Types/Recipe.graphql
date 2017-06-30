@@ -26,3 +26,25 @@ type RecipeImplement{
   #Amount of the ingredient
   amount: Int!
 }
+
+input RecipeInput{
+  title:String!
+  dificult: String!
+  time: Int!
+  ingredients: [RecipeIngredientInput]
+  implements: [RecipeImplementInput]
+}
+
+input RecipeIngredientInput{
+  #Name of the ingredient
+  name: String!
+  #Amount of the ingredient
+  amount: Int!
+}
+
+input RecipeImplementInput{
+  #Name of the ingredient
+  name: String!
+  #Amount of the ingredient
+  amount: Int!
+}
