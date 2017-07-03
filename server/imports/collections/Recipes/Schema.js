@@ -7,8 +7,11 @@ export default new SimpleSchema({
   ingredient: {
     type: Array
   },
+  implement: {
+    type: Array
+  },
   dificult: {
-    type: Number
+    type: String
   },
   time: {
     type: Number
@@ -24,9 +27,6 @@ export default new SimpleSchema({
     type: Number
   },
   // Declarando un arreglo de objetos
-  implements: {
-    type: Array
-  },
   'implement.$': {
     type: Object
   },
@@ -37,21 +37,24 @@ export default new SimpleSchema({
     type: Number
   },
   // Declarando un arreglo de objetos
-  votes: {
-    type: Array
+
+  vote: {
+    type: Array,
+    optional: true
   },
-  'votes.$': {
+  'vote.$': {
     type: Object
   },
-  'votes.$.userId': {
+  'vote.$.userId': {
     type: String
   },
-  'votes.$.score': {
+  'vote.$.score': {
     type: Number
   },
   // Declarando un arreglo de objetos
   comment: {
-    type: Array
+    type: Array,
+    optional: true
   },
   'comment.$': {
     type: Object

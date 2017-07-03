@@ -7,44 +7,81 @@ type Recipe {
   # Time made
   time: Int!
   # Ingredients
-  ingredients: [RecipeIngredient]
+  ingredient: [RecipeIngredient]
   # Implements
-  implements: [RecipeImplement]
+  implement: [RecipeImplement]
+  #comments
+  comment: [RecipeComment]
+  #votes
+  vote: [RecipeVote]
 
 }
 
 type RecipeIngredient{
   #Name of the ingredient
-  name: String!
+  ingredientId: String!
   #Amount of the ingredient
   amount: Int!
 }
 
 type RecipeImplement{
   #Name of the ingredient
-  name: String!
+  implementId: String!
   #Amount of the ingredient
   amount: Int!
 }
+
+type RecipeVote{
+  #User id
+  userId: String!
+  #Calification of the recipe by X user
+  score: Int!
+}
+
+type RecipeComment{
+  #User id
+  userId: String!
+  #Comment the recipe by X user
+  content: String!
+}
+#---------------------------------------------------
+#                       INPUTS
+#---------------------------------------------------
 
 input RecipeInput{
   title:String!
   dificult: String!
   time: Int!
-  ingredients: [RecipeIngredientInput]
-  implements: [RecipeImplementInput]
+  comment: [RecipeCommentInput]
+  vote: [RecipeVoteInput]
+  ingredient: [RecipeIngredientInput]
+  implement: [RecipeImplementInput]
 }
 
 input RecipeIngredientInput{
   #Name of the ingredient
-  name: String!
+  ingredientId: String!
   #Amount of the ingredient
   amount: Int!
 }
 
 input RecipeImplementInput{
   #Name of the ingredient
-  name: String!
+  implementId: String!
   #Amount of the ingredient
   amount: Int!
+}
+
+input RecipeVoteInput{
+  #User id
+  userId: String!
+  # Calification of the recipe by X user
+  score: Int!
+}
+
+input RecipeCommentInput{
+  #User Id
+  userId: String!
+  # Content of the comment
+  content: String!
 }
