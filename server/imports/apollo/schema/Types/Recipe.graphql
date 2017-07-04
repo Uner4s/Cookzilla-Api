@@ -6,11 +6,8 @@ type Recipe {
   dificult: String!
   # Time made
   time: Int!
-<<<<<<< HEAD
   # State of the Recipe
   state: Boolean!
-=======
->>>>>>> 3d6c80c5903f7bd5df624ec54ccd51aacc7b0e35
   # Ingredients
   ingredient: [RecipeIngredient]
   # Implements
@@ -19,7 +16,6 @@ type Recipe {
   comment: [RecipeComment]
   #votes
   vote: [RecipeVote]
-
 }
 
 type RecipeIngredient{
@@ -49,10 +45,6 @@ type RecipeComment{
   #Comment the recipe by X user
   content: String!
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 3d6c80c5903f7bd5df624ec54ccd51aacc7b0e35
 #---------------------------------------------------
 #                       INPUTS
 #---------------------------------------------------
@@ -61,10 +53,7 @@ input RecipeInput{
   title:String!
   dificult: String!
   time: Int!
-<<<<<<< HEAD
   state: Boolean!
-=======
->>>>>>> 3d6c80c5903f7bd5df624ec54ccd51aacc7b0e35
   comment: [RecipeCommentInput]
   vote: [RecipeVoteInput]
   ingredient: [RecipeIngredientInput]

@@ -2,9 +2,6 @@ type Mutation {
   addRecipe(recipe: RecipeInput): Recipe
   updateRecipe(_id: ID! title: String! dificult: String! time: Int!): Recipe
   deleteRecipe(_id: ID! ): Boolean
-<<<<<<< HEAD
   updateRecipeImplement(_id: ID! implement: [RecipeImplementInput]): Recipe
   updateRecipeIngredient(_id: ID! ingredient: [RecipeIngredientInput]): Boolean
-=======
->>>>>>> 3d6c80c5903f7bd5df624ec54ccd51aacc7b0e35
 }
