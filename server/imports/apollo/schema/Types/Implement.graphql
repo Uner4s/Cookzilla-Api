@@ -2,8 +2,11 @@ type Implement {
   _id: ID!
   # The name of the Implements
   name: String!
+  # The state
+  state: Boolean!
 }
 
 input ImplementInput {
   name: String!
+  state: Boolean!
 }
