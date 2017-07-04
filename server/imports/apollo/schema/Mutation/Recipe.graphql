@@ -1,0 +1,7 @@
+type Mutation {
+  addRecipe(recipe: RecipeInput): Recipe
+  updateRecipe(_id: ID! title: String! dificult: String! time: Int!): Recipe
+  deleteRecipe(_id: ID! ): Boolean
+  updateRecipeImplement(_id: ID! implement: [RecipeImplementInput]): Recipe
+  updateRecipeIngredient(_id: ID! ingredient: [RecipeIngredientInput]): Boolean
+}

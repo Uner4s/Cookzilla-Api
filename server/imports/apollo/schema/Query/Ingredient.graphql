@@ -1,0 +1,5 @@
+type Query {
+  #return all Ingredients
+  ingredients: [Ingredient]
+  showIngredient (_id: ID!): Ingredient
+}

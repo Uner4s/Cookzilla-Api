@@ -1,0 +1,91 @@
+type Recipe {
+  _id: ID!
+  # The title of the Recipes
+  title: String!
+  # Dificult of the recipe
+  dificult: String!
+  # Time made
+  time: Int!
+  # State of the Recipe
+  state: Boolean!
+  # Ingredients
+  ingredient: [RecipeIngredient]
+  # Implements
+  implement: [RecipeImplement]
+  #comments
+  comment: [RecipeComment]
+  #votes
+  vote: [RecipeVote]
+
+}
+
+type RecipeIngredient{
+  #Name of the ingredient
+  ingredientId: String!
+  #Amount of the ingredient
+  amount: Int!
+}
+
+type RecipeImplement{
+  #Name of the ingredient
+  implementId: String!
+  #Amount of the ingredient
+  amount: Int!
+}
+
+type RecipeVote{
+  #User id
+  userId: String!
+  #Calification of the recipe by X user
+  score: Int!
+}
+
+type RecipeComment{
+  #User id
+  userId: String!
+  #Comment the recipe by X user
+  content: String!
+}
+
+#---------------------------------------------------
+#                       INPUTS
+#---------------------------------------------------
+
+input RecipeInput{
+  title:String!
+  dificult: String!
+  time: Int!
+  state: Boolean!
+  comment: [RecipeCommentInput]
+  vote: [RecipeVoteInput]
+  ingredient: [RecipeIngredientInput]
+  implement: [RecipeImplementInput]
+}
+
+input RecipeIngredientInput{
+  #Name of the ingredient
+  ingredientId: String!
+  #Amount of the ingredient
+  amount: Int!
+}
+
+input RecipeImplementInput{
+  #Name of the ingredient
+  implementId: String!
+  #Amount of the ingredient
+  amount: Int!
+}
+
+input RecipeVoteInput{
+  #User id
+  userId: String!
+  # Calification of the recipe by X user
+  score: Int!
+}
+
+input RecipeCommentInput{
+  #User Id
+  userId: String!
+  # Content of the comment
+  content: String!
+}
