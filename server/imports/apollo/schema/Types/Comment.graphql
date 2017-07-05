@@ -1,0 +1,17 @@
+type Comment {
+  # User id for the comment
+  author: String!
+  # Date of the comment
+  date: Date!
+  # Gloss o the comment
+  content: String!
+}
+
+input CommentInput {
+  # User id for the comment
+  userId: String!
+  # Date of the comment
+  date: Date!
+  # Gloss o the comment
+  content: String!
+}

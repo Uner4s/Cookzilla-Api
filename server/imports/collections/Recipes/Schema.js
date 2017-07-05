@@ -16,6 +16,9 @@ export default new SimpleSchema({
   time: {
     type: Number
   },
+  gloss: {
+    type: String
+  },
   state: {
     type: Boolean,
     optional: true
@@ -53,20 +56,14 @@ export default new SimpleSchema({
     type: String
   },
   'vote.$.score': {
-    type: Number
+    type: Boolean
   },
   // Declarando un arreglo de objetos
-  comment: {
+  comments: {
     type: Array,
     optional: true
   },
-  'comment.$': {
-    type: Object
-  },
-  'comment.$.userId': {
-    type: String
-  },
-  'comment.$.content': {
+  'comments.$': {
     type: String
   }
 })

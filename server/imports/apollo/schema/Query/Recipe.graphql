@@ -1,4 +1,5 @@
 type Query {
   # Return all recipes
   recipes: [Recipe]
+  recipeByIngredientes(ingredients: [String]): [Recipe]
 }

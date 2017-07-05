@@ -6,6 +6,8 @@ type Recipe {
   dificult: String!
   # Time made
   time: Int!
+  # Gloss
+  gloss: String!
   # State of the Recipe
   state: Boolean!
   # Ingredients
@@ -13,7 +15,7 @@ type Recipe {
   # Implements
   implement: [RecipeImplement]
   #comments
-  comment: [RecipeComment]
+  comments: [Comment]
   #votes
   vote: [RecipeVote]
 }
@@ -36,12 +38,12 @@ type RecipeVote{
   #User id
   userId: String!
   #Calification of the recipe by X user
-  score: Int!
+  score: Boolean!
 }
 
 type RecipeComment{
   #User id
-  userId: String!
+  commentId: String!
   #Comment the recipe by X user
   content: String!
 }
@@ -53,6 +55,7 @@ input RecipeInput{
   title:String!
   dificult: String!
   time: Int!
+  gloss: String!
   state: Boolean!
   comment: [RecipeCommentInput]
   vote: [RecipeVoteInput]
@@ -78,12 +81,12 @@ input RecipeVoteInput{
   #User id
   userId: String!
   # Calification of the recipe by X user
-  score: Int!
+  score: Boolean!
 }
 
 input RecipeCommentInput{
   #User Id
-  userId: String!
+  commentId: String!
   # Content of the comment
   content: String!
 }

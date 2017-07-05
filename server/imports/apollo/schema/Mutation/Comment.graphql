@@ -1,0 +1,4 @@
+type Mutation {
+  createComment (userId: String! date: Date content: String): Comment
+
+}
