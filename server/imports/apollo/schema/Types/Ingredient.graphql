@@ -8,5 +8,4 @@ type Ingredient {
 
 input IngredientInput {
   name: String!
-  state: Boolean!
 }

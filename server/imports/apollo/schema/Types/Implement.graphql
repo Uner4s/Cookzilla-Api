@@ -8,5 +8,4 @@ type Implement {
 
 input ImplementInput {
   name: String!
-  state: Boolean!
 }

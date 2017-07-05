@@ -30,9 +30,6 @@ export default new SimpleSchema({
   'ingredient.$.ingredientId': {
     type: String
   },
-  'ingredient.$.amount': {
-    type: Number
-  },
   // Declarando un arreglo de objetos
   'implement.$': {
     type: Object
@@ -40,11 +37,7 @@ export default new SimpleSchema({
   'implement.$.implementId': {
     type: String
   },
-  'implement.$.amount': {
-    type: Number
-  },
   // Declarando un arreglo de objetos
-
   vote: {
     type: Array,
     optional: true
