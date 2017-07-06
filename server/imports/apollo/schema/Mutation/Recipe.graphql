@@ -9,4 +9,6 @@ type Mutation {
   updateRecipeImplement(_id: ID! implement: [RecipeImplementInput]): Recipe
   # Update the Recipe's Ingredients
   updateRecipeIngredient(_id: ID! ingredient: [RecipeIngredientInput]): Recipe
+  # Recipes likes
+  likeRecipe(_id: ID!): Recipe
 }

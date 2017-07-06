@@ -5,10 +5,12 @@ export default new SimpleSchema({
     type: String
   },
   ingredient: {
-    type: Array
+    type: Array,
+    optional: true
   },
   implement: {
-    type: Array
+    type: Array,
+    optional: true
   },
   dificult: {
     type: String
@@ -38,18 +40,15 @@ export default new SimpleSchema({
     type: String
   },
   // Declarando un arreglo de objetos
-  vote: {
+  like: {
     type: Array,
     optional: true
   },
-  'vote.$': {
+  'like.$': {
     type: Object
   },
-  'vote.$.userId': {
+  'like.$.userId': {
     type: String
-  },
-  'vote.$.score': {
-    type: Boolean
   },
   // Declarando un arreglo de objetos
   comments: {

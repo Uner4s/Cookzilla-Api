@@ -18,8 +18,8 @@ type Recipe {
   implement: [RecipeImplement]
   #comments
   comments: [Comment]
-  #votes
-  vote: [RecipeVote]
+  #likes
+  likes: Int
 }
 
 type RecipeIngredient{
@@ -32,20 +32,12 @@ type RecipeImplement{
   name: String!
 }
 
-type RecipeVote{
-  #User id
-  name: String!
-  #Calification of the recipe by X user
-  score: Boolean!
-}
-
 #---------------------------------------------------
 #                       INPUTS
 #---------------------------------------------------
 
 input RecipeInput{
   title: String!
-  userId: String!
   dificult: String!
   time: Int!
   gloss: String!
@@ -63,11 +55,4 @@ input RecipeIngredientInput{
 input RecipeImplementInput{
   #Name of the ingredient
   implementId: String!
-}
-
-input RecipeVoteInput{
-  #User id
-  userId: String!
-  # Calification of the recipe by X user
-  score: Boolean!
 }

@@ -1,6 +1,11 @@
 import Comments from '../../../../collections/Comments'
 import {Meteor} from 'meteor/meteor'
+import likes from './likes'
+
 export default {
+  likes
+}
+/*
   Recipe: {
     comments (recipe) {
       const comments = Comments.find({recipeId: recipe._id}).fetch()
@@ -13,4 +18,4 @@ export default {
       })
     }
   }
-}
+  */
