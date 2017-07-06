@@ -1,10 +1,7 @@
-import likes from './likes'
-import comments from './comments'
+import Comments from '../../../../collections/Comments'
+import {Meteor} from 'meteor/meteor'
 
-export default {
-  comments,
-  likes
-}
+export default function (recipe, params, {userId}) {
 /*
   Recipe: {
     comments (recipe) {
@@ -18,4 +15,5 @@ export default {
       })
     }
   }
-  */
+*/
+}
