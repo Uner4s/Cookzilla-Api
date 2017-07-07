@@ -1,5 +1,6 @@
 import SimpleSchema from 'simpl-schema'
 
+// Recipe COLLECTION
 export default new SimpleSchema({
   title: {
     type: String

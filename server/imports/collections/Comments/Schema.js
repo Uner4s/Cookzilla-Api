@@ -1,16 +1,18 @@
 import SimpleSchema from 'simpl-schema'
 
+// Comments Schema
 export default new SimpleSchema({
   userId: {
     type: String
   },
-  date: {
-    type: Date
-  },
-  content: {
+  recipeId: {
     type: String
   },
-  recipeId: {
+  date: {
+    type: Date,
+    optional: true
+  },
+  content: {
     type: String
   }
 })

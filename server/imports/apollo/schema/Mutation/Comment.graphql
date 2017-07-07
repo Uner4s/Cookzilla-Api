@@ -1,4 +1,5 @@
 type Mutation {
-  createComment (userId: String! date: Date content: String): Comment
-
+  createComment (recipeId: String! content: String!): Comment
+  updateComment (_id: ID! content: String!): Comment
+  deleteComment (_id: ID!) :Boolean
 }

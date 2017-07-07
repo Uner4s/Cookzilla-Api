@@ -11,4 +11,6 @@ type Mutation {
   updateRecipeIngredient(_id: ID! ingredient: [RecipeIngredientInput]): Recipe
   # Recipes likes
   likeRecipe(_id: ID!): Recipe
+  # Recipes comments
+ #commentRecipe(content: content): Recipe
 }

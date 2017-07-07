@@ -1,8 +1,6 @@
-import Comments from '../../../../collections/Comments'
+import Comments from 'server/imports/collections/Comments'
 import {Meteor} from 'meteor/meteor'
-
-export default function (recipe, params, {userId}) {
-/*
+export default {
   Recipe: {
     comments (recipe) {
       const comments = Comments.find({recipeId: recipe._id}).fetch()
@@ -15,5 +13,4 @@ export default function (recipe, params, {userId}) {
       })
     }
   }
-*/
 }

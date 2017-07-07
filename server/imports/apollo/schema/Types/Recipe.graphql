@@ -19,7 +19,7 @@ type Recipe {
   #comments
   comments: [Comment]
   #likes
-  likes: Int
+  likes: Int!
 }
 
 type RecipeIngredient{
@@ -41,8 +41,8 @@ input RecipeInput{
   dificult: String!
   time: Int!
   gloss: String!
-  #comment: [RecipeCommentInput]
-  #vote: [RecipeVoteInput]
+  #comments: [CommentInput]
+  #like: [LikesInput]
   ingredient: [RecipeIngredientInput]
   implement: [RecipeImplementInput]
 }
@@ -55,4 +55,8 @@ input RecipeIngredientInput{
 input RecipeImplementInput{
   #Name of the ingredient
   implementId: String!
+}
+
+input LikesInput{
+  userId: String!
 }
