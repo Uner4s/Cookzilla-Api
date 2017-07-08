@@ -1,6 +1,8 @@
 type Comment {
   _id: ID!
-  #  comment's author
+  #  recipe id
+  recipeId: String!
+  # comment's author
   author: String!
   # Name of th recipe
   recipeTitle: String!
@@ -12,7 +14,7 @@ type Comment {
 
 input CommentInput {
   # User id for the comment
-  userId: String!
+  userIdd: String!
   # Recipe Id
   recipeId: String!
   # Date of the comment

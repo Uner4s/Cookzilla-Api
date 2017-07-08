@@ -2,4 +2,5 @@ type Query {
   # Return all recipes
   recipes: [Recipe]
   recipeByIngredientes(ingredients: [String]): [Recipe]
+  commentRecipes(_id: ID!): [Comment]
 }

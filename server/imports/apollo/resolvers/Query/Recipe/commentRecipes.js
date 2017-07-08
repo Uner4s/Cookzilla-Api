@@ -1,7 +1,7 @@
-import Comments from '../../../../collections/Comments'
+import Comments from 'server/imports/collections/Comments'
 import {Meteor} from 'meteor/meteor'
-export default function (recipe, params, {userId}) {
-  const comments = Comments.find({recipeId: recipe._id}).fetch()
+export default function (root, {_id}, {userId}) {
+  const comments = Comments.find({recipeId: _id}).fetch()
   return comments.map((comment) => {
     const user = Meteor.users.findOne({_id: comment.userId})
     return {
