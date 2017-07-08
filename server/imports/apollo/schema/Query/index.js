@@ -1,12 +1,12 @@
 import User from './User'
 import Recipe from './Recipe'
 import Ingredient from './Ingredient.graphql'
-import Implement from './Implement.graphql'
+import Tool from './Tool.graphql'
 import Comment from './Comment.graphql'
 
 export default [
   Comment,
-  Implement,
+  Tool,
   Ingredient,
   Recipe,
   User

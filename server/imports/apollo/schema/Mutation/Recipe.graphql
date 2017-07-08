@@ -5,10 +5,10 @@ type Mutation {
   updateRecipe(_id: ID! title: String! dificult: String! time: Int!): Recipe
   # Delete the recipe
   deleteRecipe(_id: ID! ): Boolean
-  # Update the Recipe's Implements
-  updateRecipeImplement(_id: ID! implement: [RecipeImplementInput]): Recipe
+  # Update the Recipe's Tools
+  updateRecipeTool(_id: ID! tool: [String]): Recipe
   # Update the Recipe's Ingredients
-  updateRecipeIngredient(_id: ID! ingredient: [RecipeIngredientInput]): Recipe
+  updateRecipeIngredient(_id: ID! ingredient: [String]): Recipe
   # Recipes likes
   likeRecipe(_id: ID!): Recipe
   # Recipes comments

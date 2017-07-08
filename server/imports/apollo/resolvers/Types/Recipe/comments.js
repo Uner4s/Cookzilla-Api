@@ -5,7 +5,7 @@ export default function (recipe, params, {userId}) {
   return comments.map((comment) => {
     const user = Meteor.users.findOne({_id: comment.userId})
     return {
-      author: user.profile.name,
+      author: user.profile.name || 'Anonymous',
       content: comment.content
     }
   })

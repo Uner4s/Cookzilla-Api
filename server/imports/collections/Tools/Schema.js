@@ -1,5 +1,5 @@
 import SimpleSchema from 'simpl-schema'
-// Implements Schema
+// Tools Schema
 export default new SimpleSchema({
   name: {
     type: String

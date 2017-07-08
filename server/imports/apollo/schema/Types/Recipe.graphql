@@ -14,8 +14,8 @@ type Recipe {
   state: Boolean!
   # Ingredients
   ingredient: [RecipeIngredient]
-  # Implements
-  implement: [RecipeImplement]
+  # Tools
+  tool: [RecipeTool]
   #comments
   comments: [Comment]
   #likes
@@ -27,7 +27,7 @@ type RecipeIngredient{
   name: String!
 }
 
-type RecipeImplement{
+type RecipeTool{
   #Name of the ingredient
   name: String!
 }
@@ -43,18 +43,8 @@ input RecipeInput{
   gloss: String!
   #comments: [CommentInput]
   #like: [LikesInput]
-  ingredient: [RecipeIngredientInput]
-  implement: [RecipeImplementInput]
-}
-
-input RecipeIngredientInput{
-  #Name of the ingredient
-  ingredientId: String!
-}
-
-input RecipeImplementInput{
-  #Name of the ingredient
-  implementId: String!
+  ingredient: [String]
+  tool: [String]
 }
 
 input LikesInput{

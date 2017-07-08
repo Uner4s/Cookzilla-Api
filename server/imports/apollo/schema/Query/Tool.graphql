@@ -1,0 +1,5 @@
+type Query {
+  # Return all tools
+  getTools: [Tool]
+  showTool (_id: ID!): Tool
+}

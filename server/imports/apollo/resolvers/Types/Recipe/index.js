@@ -1,7 +1,11 @@
 import likes from './likes'
 import comments from './comments'
+import ingredient from './ingredient'
+import tool from './tool'
 
 export default {
+  tool,
+  ingredient,
   comments,
   likes
 }

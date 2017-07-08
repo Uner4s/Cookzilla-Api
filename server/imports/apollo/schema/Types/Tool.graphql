@@ -1,11 +1,11 @@
-type Implement {
+type Tool {
   _id: ID!
-  # The name of the Implements
+  # The name of the Tools
   name: String!
   # The state
   state: Boolean!
 }
 
-input ImplementInput {
+input ToolInput {
   name: String!
 }

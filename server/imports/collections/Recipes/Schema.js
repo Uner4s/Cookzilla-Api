@@ -5,14 +5,6 @@ export default new SimpleSchema({
   title: {
     type: String
   },
-  ingredient: {
-    type: Array,
-    optional: true
-  },
-  implement: {
-    type: Array,
-    optional: true
-  },
   dificult: {
     type: String
   },
@@ -26,18 +18,19 @@ export default new SimpleSchema({
     type: Boolean,
     optional: true
   },
+  ingredient: {
+    type: Array,
+    optional: true
+  },
   // Declarando un arreglo de objetos
   'ingredient.$': {
-    type: Object
-  },
-  'ingredient.$.ingredientId': {
     type: String
   },
-  // Declarando un arreglo de objetos
-  'implement.$': {
-    type: Object
+  tool: {
+    type: Array,
+    optional: true
   },
-  'implement.$.implementId': {
+  'tool.$': {
     type: String
   },
   // Declarando un arreglo de objetos
