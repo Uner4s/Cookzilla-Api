@@ -3,4 +3,5 @@ type Mutation {
   createIngredient (name: String!): Ingredient
   deleteIngredient (_id: ID!): Boolean
   updateIngredient (_id: ID! name: String!): Ingredient
+  stateIngredient (_id: ID!): Ingredient
 }

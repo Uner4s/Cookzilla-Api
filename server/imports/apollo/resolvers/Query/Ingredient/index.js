@@ -1,9 +1,11 @@
 import ingredients from './ingredients'
 import showIngredient from './showIngredient'
-import aceptIngredient from './aceptIngredient'
+import pendingIngredients from './pendingIngredients'
+import getAcceptedIngredients from './getAcceptedIngredients'
 
 export default {
-  aceptIngredient,
+  getAcceptedIngredients,
+  pendingIngredients,
   showIngredient,
   ingredients
 }

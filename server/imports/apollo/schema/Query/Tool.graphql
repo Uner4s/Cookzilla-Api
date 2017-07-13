@@ -1,5 +1,7 @@
 type Query {
   # Return all tools
   getTools: [Tool]
+  getAcceptedTools: [Tool]
   showTool (_id: ID!): Tool
+  pendingTools: [Tool]
 }

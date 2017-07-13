@@ -3,4 +3,5 @@ type Mutation{
   createTool (name: String!): Tool
   deleteTool (_id: ID!): Boolean
   updateTool (_id: ID! name: String!): Tool
+  stateTool (_id: ID! ): Tool
 }
