@@ -1,5 +1,5 @@
 import Tools from 'server/imports/collections/Tools'
-export default function (root, {_id, name}, {userId}) {
+export default function (root, {_id}, {userId}) {
   Tools.update(_id, {$set: {
     state: true
   }})
