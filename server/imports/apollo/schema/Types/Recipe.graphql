@@ -47,6 +47,18 @@ input RecipeInput{
   tool: [String]
 }
 
+input SearchIngredient{
+  name: String!
+}
+
+input SearchTool{
+  name: String!
+}
+
+input LikesInput{
+  userId: String!
+}
+
 input LikesInput{
   userId: String!
 }
