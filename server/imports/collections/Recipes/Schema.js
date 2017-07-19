@@ -8,6 +8,9 @@ export default new SimpleSchema({
   dificult: {
     type: String
   },
+  userId: {
+    type: String
+  },
   time: {
     type: Number
   },

@@ -43,8 +43,16 @@ input RecipeInput{
   gloss: String!
   #comments: [CommentInput]
   #like: [LikesInput]
-  ingredient: [String]
-  tool: [String]
+  ingredient: [CRIngredient]
+  tool: [CRTool]
+}
+
+input CRIngredient{
+  name: String!
+}
+
+input CRTool{
+  name: String!
 }
 
 input SearchIngredient{
@@ -53,10 +61,6 @@ input SearchIngredient{
 
 input SearchTool{
   name: String!
-}
-
-input LikesInput{
-  userId: String!
 }
 
 input LikesInput{
