@@ -23,7 +23,7 @@ export default function (root, {recipe}, {userId}) {
     console.log('Cant create a recipe with tools or ingredients not accepted')
   }
   else {
-    const recipeId = Recipes.insert({title, userId, dificult, time, gloss, ingredient, tool})
+    const recipeId = Recipes.insert({title, dificult, time, gloss, ingredient, tool})
     return Recipes.findOne(recipeId)
   }
 }

@@ -9,7 +9,8 @@ export default new SimpleSchema({
     type: String
   },
   userId: {
-    type: String
+    type: String,
+    optional: true
   },
   time: {
     type: Number

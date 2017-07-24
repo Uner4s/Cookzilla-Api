@@ -12,5 +12,6 @@ type Mutation {
   # Recipes likes
   likeRecipe(_id: ID!): Recipe
   # Recipes comments
+  stateRecipe(_id: ID): Recipe
  #commentRecipe(content: content): Recipe
 }

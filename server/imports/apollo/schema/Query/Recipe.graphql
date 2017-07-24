@@ -5,4 +5,6 @@ type Query {
   commentRecipes(_id: ID!): [Comment]
   advanceRecipeSearch(ingredients: [SearchIngredient] tools: [SearchTool]): [Recipe]
   oneRecipe(_id: ID!): Recipe
+  getAcceptedRecipes: [Recipe]
+  pendingRecipes: [Recipe]
 }
