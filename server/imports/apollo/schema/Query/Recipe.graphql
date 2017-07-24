@@ -4,4 +4,5 @@ type Query {
   recipeByIngredientes(ingredients: [String]): [Recipe]
   commentRecipes(_id: ID!): [Comment]
   advanceRecipeSearch(ingredients: [SearchIngredient] tools: [SearchTool]): [Recipe]
+  oneRecipe(_id: ID!): Recipe
 }
