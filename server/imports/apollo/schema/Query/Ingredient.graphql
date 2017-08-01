@@ -4,4 +4,5 @@ type Query {
   showIngredient (_id: ID!): Ingredient
   pendingIngredients: [Ingredient]
   getAcceptedIngredients: [Ingredient]
+  getNameIngredient (search: String): [Ingredient]
 }
