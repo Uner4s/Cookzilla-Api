@@ -20,6 +20,8 @@ type Recipe {
   comments: [Comment]
   #likes
   likes: Int!
+  #userLike
+  userLike: [UserLiked]
 }
 
 type RecipeIngredient{
@@ -31,6 +33,11 @@ type RecipeTool{
   #Name of the ingredient
   name: String!
 }
+
+type UserLiked {
+  email: String
+}
+
 
 #---------------------------------------------------
 #                       INPUTS
