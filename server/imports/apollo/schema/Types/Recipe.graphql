@@ -24,12 +24,12 @@ type Recipe {
   userLike: [UserLiked]
 }
 
-type RecipeIngredient{
+type RecipeIngredient {
   #Name of the ingredient
   name: String!
 }
 
-type RecipeTool{
+type RecipeTool {
   #Name of the ingredient
   name: String!
 }
@@ -38,12 +38,11 @@ type UserLiked {
   email: String
 }
 
-
 #---------------------------------------------------
 #                       INPUTS
 #---------------------------------------------------
 
-input RecipeInput{
+input RecipeInput {
   title: String!
   dificult: String!
   time: Int!
@@ -54,22 +53,22 @@ input RecipeInput{
   tool: [CRTool]
 }
 
-input CRIngredient{
+input CRIngredient {
   name: String!
 }
 
-input CRTool{
+input CRTool {
   name: String!
 }
 
-input SearchIngredient{
+input SearchIngredient {
   name: String!
 }
 
-input SearchTool{
+input SearchTool {
   name: String!
 }
 
-input LikesInput{
+input LikesInput {
   userId: String!
 }
