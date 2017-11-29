@@ -2,16 +2,7 @@ import Recipes from 'server/imports/collections/Recipes'
 import Ingredients from 'server/imports/collections/Ingredients'
 import Tools from 'server/imports/collections/Tools'
 import map from 'lodash/map'
-<<<<<<< HEAD
 export default function (root, { tools, ingredients }, { userId }) {
-  // map(array, f(x))
-  // const variable = map(tools, tool => { return tool.name })
-  // tool => {name: 'Olla'}
-  // const toolsId = map(tools, tool => Tools.findOne(tool)._id)
-=======
-export default function (root, {tools, ingredients}, {userId}) {
-  
->>>>>>> 621dd8648bb5f0758e875704e860371a5537ad94
   const toolsAll = map(tools, tool => Tools.findOne(tool)) // Get the elements like an array, if dont exist, put undefined
   const toolsOnly = toolsAll.filter(function (n) {
     return n !== undefined
